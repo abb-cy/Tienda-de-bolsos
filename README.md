@@ -7,7 +7,11 @@ Esta es una página web creada como parte de una tarea, donde se muestra una tie
 - Animaciones y transiciones.
 - Catálogo de productos con imágenes.
 
+git remote add origin https://github.com/abb-cy/Tienda-Coquette.git
+git branch -M main
+git push -u origin main
+
 ## Cómo clonar el proyecto
 1. Clona el repositorio:
 ```bash
-git clone https://github.com/tuusuario/TiendaCoquette.git
+https://github.com/abb-cy/Tienda-Coquette.git
