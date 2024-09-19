@@ -1,0 +1,165 @@
+/* Variables de SASS */
+$primary-color: #f8d7da;
+$secondary-color: #fce4ec;
+$accent-color: #ffc1cc;
+$text-color: #3e3e3e;
+$title-color: #d81b60;
+$font-main: 'Quicksand', sans-serif;
+$font-title: 'Playfair Display', serif;
+
+/* Nesting SASS para estructura */
+body {
+    font-family: $font-main;
+    background-color: $secondary-color;
+    color: $text-color;
+    margin: 0;
+    padding: 0;
+    
+    h1, h2, h3 {
+        font-family: $font-title;
+        color: $title-color;
+    }
+
+    /* Header */
+    header {
+        background-color: $accent-color;
+        padding: 1rem 0;
+        text-align: center;
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: $text-color;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: $title-color;
+        }
+    }
+
+    /* Banner */
+    .banner {
+        background: url('banner.jpg') center/cover no-repeat;
+        text-align: center;
+        color: white;
+        padding: 5rem 1rem;
+
+        h2 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn-explore {
+            padding: 0.8rem 2rem;
+            background-color: $title-color;
+            color: white;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: darken($title-color, 10%);
+            }
+        }
+    }
+
+    /* Productos */
+    .productos {
+        padding: 4rem 1rem;
+        background-color: $secondary-color;
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .product {
+            background-color: white;
+            border: 2px solid $accent-color;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 8px;
+                margin-bottom: 1rem;
+            }
+
+            .price {
+                color: $title-color;
+                font-size: 1.2rem;
+                font-weight: 700;
+            }
+        }
+    }
+
+    /* Contacto */
+    .contacto {
+        padding: 3rem 1rem;
+        background-color: $primary-color;
+        text-align: center;
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+
+            input, textarea {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 1rem;
+                border: 1px solid $accent-color;
+                border-radius: 5px;
+            }
+
+            input[type="submit"] {
+                background-color: $title-color;
+                color: white;
+                cursor: pointer;
+                border: none;
+                padding: 10px 20px;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: darken($title-color, 10%);
+                }
+            }
+        }
+    }
+
+    /* Pie de página */
+    footer {
+        background-color: $accent-color;
+        padding: 1rem;
+        text-align: center;
+        color: white;
+    }
+}
+
