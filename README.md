@@ -1,4 +1,4 @@
-# Tienda Coquette de Bolsos
+# Tienda de Bolsos
 
 Esta es una página web creada como parte de una tarea, donde se muestra una tienda en línea de bolsos coquetos y elegantes. Incluye un diseño basado en Bootstrap y Sass, con 12 productos.
 
